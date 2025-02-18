@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Crecimiento Explosivo de la IA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+        body {
+            background: linear-gradient(to bottom, #ffffff, #a8d8ff);
+            color: #0a192f;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: clamp(1.8em, 4vw, 2.5em);
+            margin-bottom: 10px;
+            color: #0077b6;
+        }
+        .author {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.5s ease-in-out, filter 0.3s;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+        .content {
+            font-size: clamp(1em, 2.5vw, 1.2em);
+            line-height: 1.8;
+            text-align: justify;
+            color: #1a3a5f;
+        }
+        .highlight {
+            color: #0077b6;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #444;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .image-container img {
+                max-height: 300px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .content {
+                font-size: 1em;
+            }
+            .image-container img {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="row">
+            <h1 class="text-center display-4"></h1>
+        </header>
+        <div class="row">
+            <div class="cajados col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2"></div>
+            <div class="cajados col-4 col-sm-4 col-md-1 col-lg-1 col-xl-3 col-xxl-3">
+                <img src="imagenes/logo.jpg"  width="200px">
+            </div>
+            <div class="cajados col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2"></div>
+            <div class="cajauno col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+                <form>
+                    <input type="search" id="busqueda" name="busqueda" placeholder="Buscar...">
+                    <button type="submit"><i class="fa-solid fa-user" style="color: rgb(6, 3, 148);;"></i></button>
+                  </form>
+            </div>
+            <div class="cajauno col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                <button>inicio</button>
+            </div>
+            <div class="cajacuatro col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                
+            </div>  
+            <div class="cajados col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>  
+        </div>
+        <div class="row">
+          <div class="cajados col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
+          <div class="cajacinco col-4 col-sm-4 col-md-1 col-lg-1 col-xl-10 col-xxl-10">
+              <img src="imagenes/fondo.svg" alt="">
+          </div>
+          <div class="cajados col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
+      </div>
+        <div class="row">
+          <div class="col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 cajados"></div>
+          <div class="col-4 col-sm-4 col-md-1 col-lg-10 col-xl-10 col-xxl-10 cajade">
+              <div class="row">
+                  <div class="col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 cajados"></div>
+                  <div class="cajatres col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2" >
+                      <nav id="nav">
+                          <ul>
+                              <li><a href="index.html">Acerca de mi</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="cajatres col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+                      <nav id="nav">
+                          <ul>
+                              <li><a href="index.html" text-center white>Portafolio</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="cajatres text-center col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+                      <nav id="nav">
+                          <ul>
+                              <li><a href="index.html">Servicio</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="cajatres col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+                      <nav id="nav">
+                          <ul>
+                              <li><a href="blog.html">Blog</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="cajatres col-4 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+                      <nav id="nav">
+                          <ul>
+                              <li><a href="index.html">Contacto</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 cajados"></div>
+              </div>
+          </div>
+          <div class="col-4 col-sm-4 col-md-1 col-lg-1 col-xl-1 col-xxl-1 cajados"></div>
+      </div>
+        <h1>El Crecimiento Explosivo de la IA</h1>
+        <p class="author">Por Luisa Rubio - 17 de Febrero, 2025</p>
+
+        <div class="image-container">
+            <img src="imagenes/5.jpg" alt="El crecimiento de la IA">
+        </div>
+
+        <div class="content">
+            <p>La <span class="highlight">Inteligencia Artificial (IA)</span> ha experimentado un <span class="highlight">crecimiento explosivo</span> en los últimos años, transformando la forma en que <span class="highlight">vivimos, trabajamos</span> e interactuamos con la tecnología.</p>
+
+            <p>Los avances en <span class="highlight">aprendizaje automático, computación en la nube</span> y su integración en la vida cotidiana han sido clave en este crecimiento.</p>
+
+            <p>Sin embargo, también surgen desafíos importantes, como la necesidad de abordar <span class="highlight">aspectos éticos y responsables</span> en su desarrollo.</p>
+
+            <p>El futuro de la IA es <span class="highlight">emocionante y lleno de posibilidades</span>, pero es crucial que prioricemos la ética y la responsabilidad en su implementación.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="imagenes/6.jpg" alt="El futuro de la inteligencia artificial">
+        </div>
+
+        <p class="footer">© 2025 - Blog Artístico | Reflexiones sobre Tecnología y Futuro</p>
+    </div>
+
+</body>
+</html>
